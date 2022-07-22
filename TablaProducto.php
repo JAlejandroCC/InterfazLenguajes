@@ -15,7 +15,7 @@ $conexion = mysqli_connect('localhost', 'root', '', 'inventario_tienda');
         
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <h2 class="nav-link"">Inventario</h2>
+                <h2 class="nav-link"">Productos</h2>
             </li>
         </li>
     </ul>
