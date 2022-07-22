@@ -99,7 +99,7 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"><button><a href="TablaCajero">Ver datos</a></button></small>
+                        <small class="text-muted"><button><a href="TablaCajero.php">Ver datos</a></button></small>
                     </div>
                 </div>
             </div>

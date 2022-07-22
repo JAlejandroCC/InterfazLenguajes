@@ -16,7 +16,6 @@ body{
     padding: .5rem 1rem;
     color: #F2E6D0;
     text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .T{
