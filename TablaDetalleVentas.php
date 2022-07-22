@@ -26,26 +26,24 @@ $conexion = mysqli_connect('localhost', 'root', '', 'inventario_tienda');
             <table class="table">
                 <thead>
                     <tr>
+                        <th scope="col">Numero</th>
+                        <th scope="col">idCajero</th>
+                        <th scope="col">idVenta</th>
                         <th scope="col">idProducto</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad disponible</th>
-                        <th scope="col">Talla</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $sql = "SELECT * FROM producto";
+                    $sql = "SELECT * FROM detalleventas";
                     $result = mysqli_query($conexion, $sql);
 
                     while ($mostrar = mysqli_fetch_array($result)) {
                         ?>
                         <tr>
+                            <th><?php echo $mostrar['numero'] ?></th>
+                            <th><?php echo $mostrar['idCajero'] ?></th>
+                            <th><?php echo $mostrar['idVenta'] ?></th>
                             <th><?php echo $mostrar['idProducto'] ?></th>
-                            <th><?php echo $mostrar['descripcion'] ?></th>
-                            <th><?php echo $mostrar['precio'] ?></th>
-                            <th><?php echo $mostrar['cantDisponible'] ?></th>
-                            <th><?php echo $mostrar['talla'] ?></th>
                         </tr>
 
                         <?php
